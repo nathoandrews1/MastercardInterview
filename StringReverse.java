@@ -14,9 +14,9 @@ public class StringReverse {
         String message = "Mastercard";
         
         String reversed = Strings.reverseString(message);
-        System.out.println(message + " reversed without recurssion " + reversed);
+        System.out.println(message + " reversed without recurssion: " + reversed);
         
         String recursiveReverse = Strings.recursiveReverse(message);
-        System.out.println("This is the same String but done recurssively " + recursiveReverse);
+        System.out.println("\nThis is the same String but done recurssively: " + recursiveReverse);
     }
 }
