@@ -53,7 +53,7 @@ final class Arrays2d {
                     break;
                 }
             }
-            System.out.println("The most frequent number/s are ");        
+            System.out.println("\nThe most frequent number/s are ");        
             for(int i = 0; i <= sortedFreq.length - 1; i++)
             {
                 if(arrSize == 1) 
