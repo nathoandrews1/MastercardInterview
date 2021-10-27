@@ -14,11 +14,31 @@ public class CountArray {
     //Run method for test
     public static void main(String[] args)
     {
-        int array[] = new int[]{1,0,0,1,0,1,3,3,4,2,1,0};
+        int array[] = new int[]{1,0,0,1,0,1,3,3,4,2,0,3,1,3,4,4,4,2,2,2};
+        
+        System.out.println(listArray(array) + "\nThe array above is to be counted.\n");
         
         int arrayCounted[][] = Arrays2d.countArray(array);
-                
+        
+        //Must be performed on a counted (countArray)
         Arrays2d.listMostFreq(arrayCounted);
+    }
+    
+    //Quick function to list elements for better output reading.
+    public static String listArray(int input[])
+    {
+        int end = input.length - 1;
+        String stringedArr = "[";
+        for(int i = 0; i<= end; i++)
+        {
+            if(i == end)
+            {
+                stringedArr += input[i] + "]";
+            }
+            else 
+                stringedArr += input[i] + ", ";
+        }
+        return stringedArr;
     }
     /*
     public static void findAmountArrayList(ArrayList<Integer> input) {
